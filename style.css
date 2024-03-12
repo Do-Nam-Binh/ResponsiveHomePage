@@ -1,7 +1,43 @@
 .content {
   display: grid;
   grid-template-rows: fit-content(400px) fit-content(800px) fit-content(400px);
-  margin: 20px 10px;
+  margin: 40px 50px;
+}
+
+.header {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.profileName {
+  display: grid;
+  align-items: end;
+  justify-content: center;
+  color: white;
+  width: 400px;
+  height: 400px;
+  background-image: url(pexels-mohamed-abdelghaffar-771742.jpg);
+  object-fit: cover;
+  background-position: top;
+  background-size: 400px;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 300px;
+  background-color: wheat;
+  padding-left: 40px;
+}
+
+.about-title {
+  align-self: end;
+}
+
+.about-desc {
+  margin-right: 100px;
 }
 
 .main-body {
@@ -12,7 +48,8 @@
 }
 
 .projectList {
-  justify-self: stretch;
+  justify-self: center;
+  width: 80%;
   gap: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -24,11 +61,4 @@
   border: 1px solid red;
   width: 250px;
   height: 280px;
-}
-
-.profileImg img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  background-position: top;
 }
