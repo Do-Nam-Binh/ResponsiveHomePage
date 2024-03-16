@@ -5,13 +5,14 @@
 .content {
   display: grid;
   grid-template-rows: fit-content(400px) fit-content(800px) fit-content(400px);
+  width: 100vw;
 }
 
 .header {
   display: flex;
   height: 400px;
   align-items: center;
-  margin: 60px;
+  margin: 40px 10vh;
   margin-bottom: 100px;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .about-desc {
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
 .main-body {
@@ -51,20 +52,48 @@
   align-content: center;
 }
 
+.project-title {
+  margin-left: 5vw;
+  margin-bottom: 40px;
+}
+
 .projectList {
   justify-self: center;
-  width: 80%;
+  width: 95vw;
   gap: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
 }
 
 .project {
   border: 1px solid red;
-  width: 250px;
-  height: 280px;
+  width: 300px;
+  height: 350px;
+  display: grid;
+  grid-template-rows: 3fr 0.5fr 2fr;
+}
+
+.project > div {
+  margin-left: 20px;
+}
+
+.project .screenshot {
+  justify-self: stretch;
+  align-self: stretch;
+  margin-left: 0px;
+  background-color: cornflowerblue;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.project .project-name {
+  align-self: center;
+  font-weight: bolder;
 }
 
 .footer {
